@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Rooms</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .btn-room {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: inline-block; /* Display buttons in one line */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Available Rooms</h1>
+        {% for room in rooms %}
+            <a href="/room/{{ room }}" class="btn btn-primary btn-room" style="width: 150px;">{{ room }}</a><br>
+        {% endfor %}
+    </div>
+</body>
+</html>

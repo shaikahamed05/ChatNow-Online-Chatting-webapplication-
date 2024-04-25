@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .menu-link {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+        .menu-link:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>MAIN ROOM DATA</h3>
+        <a href="/view_deletes" class="menu-link">View Who Deleted the Main Room Chats</a>
+        <a href="/view_users" class="menu-link">View Who Logged In to Chat</a>
+        <h3>MY ROOM DATA</h3>
+        <a href="/myroom_delete" class="menu-link">View Who Deleted the Myroom Chat</a>
+        <a href="/myroom_users" class="menu-link">View Who Logged In to Myroom</a>
+        <h3>ROOM MANAGEMENT</h3>
+        <a href="/view_rooms" class="menu-link">Clone Room Chats</a>
+        <h3>NAVIGATION</h3>
+        <a href="/" class="menu-link">Go to Main Chat</a>
+    </div>
+</body>
+</html>
